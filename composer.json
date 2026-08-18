@@ -1,0 +1,51 @@
+{
+    "name": "coolms/entity-module",
+    "description": "Platform composition layer over coolms/entity: reflection field extraction, the tagged repository registry, the extras-flattening normalizer and the entity:find widget renderers",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "coolms",
+        "entity",
+        "extras",
+        "serializer",
+        "widget"
+    ],
+    "authors": [
+        {
+            "name": "Dmitry Popov"
+        }
+    ],
+    "require": {
+        "php": "^8.5",
+        "coolms/core": "^1.0",
+        "coolms/dtmpl": "^1.0",
+        "coolms/entity": "^1.0",
+        "coolms/entity-persistence-implementation": "^1.0",
+        "coolms/rql": "^1.0",
+        "symfony/dependency-injection": "^8.0",
+        "symfony/serializer": "^8.0",
+        "symfony/uid": "^8.0"
+    },
+    "require-dev": {
+        "coolms/entity-doctrine": "^1.0",
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CoolMS\\EntityModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CoolMS\\EntityModule\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
