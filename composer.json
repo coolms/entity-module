@@ -18,7 +18,7 @@
     "require": {
         "php": "^8.5",
         "coolms/core": "^1.0",
-        "coolms/dtmpl": "^1.0",
+        "coolms/dtmpl": "^2.0",
         "coolms/entity": "^1.0",
         "coolms/entity-persistence-implementation": "^1.0",
         "coolms/rql": "^1.0",
