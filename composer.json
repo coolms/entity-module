@@ -17,17 +17,17 @@
     ],
     "require": {
         "php": "^8.5",
-        "coolms/core": "^1.0",
+        "coolms/core": "^2.0",
         "coolms/dtmpl": "^2.0",
-        "coolms/entity": "^1.0",
-        "coolms/entity-persistence-implementation": "^1.0",
-        "coolms/rql": "^1.0",
+        "coolms/entity": "^2.0",
+        "coolms/entity-persistence-implementation": "^2.0",
+        "coolms/rql": "^2.0",
         "symfony/dependency-injection": "^8.0",
         "symfony/serializer": "^8.0",
         "symfony/uid": "^8.0"
     },
     "require-dev": {
-        "coolms/entity-doctrine": "^1.0",
+        "coolms/entity-doctrine": "^2.0",
         "phpunit/phpunit": "^12.5"
     },
     "autoload": {
