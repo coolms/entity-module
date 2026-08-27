@@ -14,6 +14,17 @@ same commit as the change it describes.
 
 Rides the next Tuesday release train. Nothing here has shipped yet.
 
+### Fixed: the installation command in the readme names the adapter
+
+`composer require coolms/entity-module` on its own cannot resolve. This package
+requires a virtual persistence-implementation package, and only an adapter
+provides one, so Composer reports that the virtual package "could not be found
+in any version" -- which reads like a broken package rather than a missing
+argument.
+
+The readme now leads with the command that works:
+`composer require coolms/entity-module coolms/entity-doctrine`.
+
 ### Changed: sibling constraints move to the v2 generation
 
 - `coolms/core`: `^1.0` to `^2.0`
